@@ -174,6 +174,20 @@ ______
 
 **7)** Implemente o pseudocódigo para o algoritmo representado no fluxograma da imagem.
 ![Uma imagem](assets/image.png)
+
+**Resposta:**
+
+Pergunte: "Qual a sua idade?"
+idade = LerEntradaDoUsuário
+
+Se idade < 16:
+	Mostre: "Não pode votar!"
+Se não:
+	Se 16 ≤ idade < 18:
+		Mostre: "Voto facultativo!"
+	Se não:
+		Mostre: "Voto obrigatório!"
+
 ______
 
 **8)** Considere a implementação da classe base FormaGeometrica em um sistema de modelagem de formas geométricas. Sua tarefa é implementar, utilizando pseudocódigo, as classes derivadas Retangulo e Circulo, que herdam da classe FormaGeometrica, adicionando atributos específicos e métodos para calcular a área de um retângulo e de um círculo, respectivamente.
@@ -190,6 +204,7 @@ Classe FormaGeometrica:
         # Implementação genérica para cálculo de área, a ser sobrescrita pelas subclasses.
 
 ```
+
 **Resposta:** 
 
 Classe FormaGeometrica:
@@ -226,6 +241,7 @@ Classe Circulo:
 
     Método CalcularArea():
         Retorna π * raio^2
+
 ______
 
 **9)** Você foi contratado(a) como estagiário(a) da Tesla e está participando do desenvolvimento de um programa para simular o desempenho de um carro elétrico em uma corrida. Seu objetivo é determinar em quantos minutos o carro levará para completar uma determinada distância, levando em consideração uma velocidade inicial e uma taxa de aceleração constante. No entanto, você deseja garantir que o carro não exceda uma velocidade máxima nem que a corrida demore mais do que um tempo máximo. Implemente a lógica dessa simulação em pseudocódigo.
@@ -257,6 +273,7 @@ Função SimularCorrida(distancia, velocidadeInicial, aceleracao, velocidadeMaxi
         # Verifica se o tempo máximo foi excedido
         Se tempo > tempoMaximo:
             Retorne "Tempo máximo excedido"  # Indica que o tempo máximo foi excedido
+
 ______
 
 **10)** Uma matriz é uma coleção bidimensional de elementos, organizados em linhas e colunas. A seguir, é fornecida a implementação da função SomaDeMatrizes(matrizA, matrizB), que calcula a soma de duas matrizes. Sua tarefa é implementar uma função semelhante, porém que realize a multiplicação de duas matrizes.
@@ -306,7 +323,7 @@ Função MultiplicacaoDeMatrizes(matrizA, matrizB):
 
         Retornar matrizResultado
 
-# Exemplo de uso da função
+Exemplo de uso da função
 matrizA <- [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 matrizB <- [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
 
